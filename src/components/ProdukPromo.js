@@ -3,19 +3,12 @@ import ContentLoader from 'react-content-loader';
 
 const ProdukPromo = ({ ...props }) => {
 
-    const [produkPromo, setProdukPromo] = useState([])
     const [loadingState] = useState([1, 2, 3, 4, 5])
-
-    useEffect(() => {
-        setTimeout(() => {
-            setProdukPromo(props.produkPromo)
-        }, 2000)
-    })
 
     const renderData = () => {
         return (
             <div className="uk-grid-match uk-grid-small produk-promo-content" uk-grid="true">
-                { produkPromo.map((item, index) => (
+                { props.produkPromo.map((item, index) => (
                     <div className="uk-width-1-5@m" key={ index }>
                         <div className="uk-card uk-card-default produk-promo">
                             <div className="uk-card-media-top produk-promo">
@@ -68,7 +61,7 @@ const ProdukPromo = ({ ...props }) => {
                     {/* <button type="button">Muat Lainnya</button> */}
                 </div>
                 <div className="content-container">
-                    { produkPromo.length > 0 ? renderData() : renderLoadingState() }
+                    { props.produkPromo.length > 0 ? renderData() : renderLoadingState() }
                 </div>
             </div>
     )

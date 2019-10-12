@@ -22,8 +22,8 @@ const Banner = () => {
                     "imageUrl": "https://ecs7.tokopedia.net/img/cache/1242/banner/2019/10/10/20723472/20723472_3ef16fe1-e23c-488b-8710-b69b3a463725.png"
                 },
             ])
-        }, 2000)
-    })
+        }, 1000)
+    }, [])
 
     const renderData = () => {
         return (

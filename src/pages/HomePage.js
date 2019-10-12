@@ -12,12 +12,12 @@ const Home = () => {
     useEffect(() => {
         api.home.getHomePage().then(response => {
             // console.log(response)
-            setCategory(response.length > 0 ? response[0].data.category : [])
-            setProdukPromo(response.length > 0 ? response[0].data.productPromo : [])
-        }).catch(error => {
-            console.log(error)
+            if(response.length > 0) {
+                setCategory(response[0].data.category)
+                setProdukPromo(response[0].data.productPromo)
+            }
         })
-    })
+    }, [])
 
     return (
         <div>

@@ -11,6 +11,8 @@ const request = (method, url, data) => {
       }).then(({ data }) => {
         return data;
       }).catch(error => {
+          console.log(error.response)
+          alert("error kena cors")
           return error
       });
 }

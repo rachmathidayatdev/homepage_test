@@ -2,20 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ContentLoader from 'react-content-loader';
 
 const Kategori = ({ ...props }) => {
-
-    const [category, setCategory] = useState([])
+    
     const [loadingState] = useState([1, 2, 3, 4])
-
-    useEffect(() => {
-        setTimeout(() => {
-            setCategory(props.kategori)
-        }, 2000)
-    })
 
     const renderData = () => {
         return (
             <ul className="uk-slider-items uk-grid">
-            { category.map((item, index) => (
+            { props.kategori.map((item, index) => (
                 <li className="uk-width-1-4@m" key={ index }>
                     <div className="uk-card uk-card-default uk-card-body card-kategori">
                         <div className="uk-width-1-3@m">
@@ -62,7 +55,7 @@ const Kategori = ({ ...props }) => {
             <div className="content-container">
                 <div className="uk-position-relative uk-visible-toggle uk-light" style={{ padding: '5px 5px 5px 5px' }} tabIndex="-1" uk-slider="true">
                     
-                    { category.length > 0 ? renderData() : renderLoadingState() }
+                    { props.kategori.length > 0 ? renderData() : renderLoadingState() }
 
                     <a className="uk-position-center-left uk-position-small uk-hidden-hover custom-color uk-icon-button" href="#" uk-icon="chevron-left" uk-slider-item="previous"></a>
                     <a className="uk-position-center-right uk-position-small uk-hidden-hover custom-color uk-icon-button" href="#" uk-icon="chevron-right" uk-slider-item="next"></a>
