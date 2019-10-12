@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//uikit
+import "../node_modules/uikit/dist/css/uikit.css";
+import "../node_modules/uikit/dist/js/uikit.min.js";
+import "../node_modules/uikit/dist/js/uikit-icons.js";
+import "./assets/styles/index.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

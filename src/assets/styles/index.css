@@ -1,0 +1,131 @@
+.uk-navbar-container.uk-navbar-container__padding {
+    padding: 10px 20px 10px 20px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+}
+
+.uk-navbar-center.uk-navbar-center__width-custom {
+    width: 50%;
+}
+
+.uk-inline.uk-inline__search-input-width {
+    width: 100%;
+}
+
+.header-right-content {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.banner-container {
+    margin-bottom: 32px;
+}
+
+.image-border {
+    border-radius: 10px;
+}
+
+.uk-position-small.uk-hidden-hover.custom-color {
+    background-color: #fff;
+    color: grey;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+}
+
+.kategori-container {
+    margin-bottom: 32px;
+}
+
+.title-content {
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: -0.2px;
+    color: rgba(49, 53, 59, 0.96);
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.uk-card.uk-card-default.uk-card-body.card-kategori {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.uk-card.uk-card-default.produk-promo {
+    border-radius: 10px;
+}
+
+.uk-card-media-top.produk-promo {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.uk-card-media-bottom.produk-promo {
+    padding: 10px 10px 10px 10px;
+}
+
+.title-produk-promo {
+    margin: 0;
+    max-height: 38px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    color: rgba(49, 53, 59, 0.96);
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fa591d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+.uk-card.footer-container {
+    margin-left: unset;
+    padding: 30px 0px 30px 0px;
+}
+
+.li-nostyle {
+    list-style: none;
+    font-size: 14px;
+}
+
+.li-nostyle > a {
+    color: #666;
+    text-decoration: none;
+}
+
+.li-nostyle > a:hover {
+    color: #42b549;
+}
+
+.btn-daftar {
+    border-color: #42b549;
+    border-radius: 10px;
+}
